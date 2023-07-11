@@ -27,6 +27,13 @@ functions:
           path: /
           method: get
 
+  addNote:
+    handler: src/notes/addNote.handler
+    events:
+      - httpApi:
+          path: /note
+          method: post
+
 resources:
   Resources:
     NotesTable:
