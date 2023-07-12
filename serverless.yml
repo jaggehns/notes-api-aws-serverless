@@ -48,6 +48,13 @@ functions:
           path: /note/{id}
           method: get
 
+  updateNote:
+    handler: src/notes/updateNote.handler
+    events:
+      - httpApi:
+          path: /note/{id}
+          method: put
+
 resources:
   Resources:
     NotesTable:
