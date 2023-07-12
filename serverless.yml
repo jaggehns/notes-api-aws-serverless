@@ -41,6 +41,13 @@ functions:
           path: /notes
           method: get
 
+  fetchNote:
+    handler: src/notes/fetchNote.handler
+    events:
+      - httpApi:
+          path: /note/{id}
+          method: get
+
 resources:
   Resources:
     NotesTable:
