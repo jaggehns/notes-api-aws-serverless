@@ -55,6 +55,13 @@ functions:
           path: /note/{id}
           method: put
 
+  deleteNote:
+    handler: src/notes/deleteNote.handler
+    events:
+      - httpApi:
+          path: /note/{id}
+          method: delete
+
 resources:
   Resources:
     NotesTable:
